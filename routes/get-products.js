@@ -1,42 +1,12 @@
 import express,{ Router } from 'express'
 import ResponseBuilder from '../builder/response.builder.js';
+import fs from 'fs'
 
 const productRouter = Router()
 productRouter.use(express.json())
 
-const productos = [
-    {
-        id: 1,
-        name: 'Pantalon',
-        pice: 100,
-        imagen: 'https://picsum.photos/id/237/200/300',
-        description: 'Pantalon deportivo',
-        stock: 10,
-        category: "noob",
-        activeCategory: true
-    },
-    {
-        id: 2,
-        name: 'Camisa',
-        pice: 50,
-        imagen: 'https://picsum.photos/id/238/200/300',
-        description: 'Camisa deportiva',
-        stock: 5,
-        category: "pro",
-        activeCategory: false
-    },
-    {
-        id: 3,
-        name: 'Zapatos',
-        pice: 200,
-        imagen: 'https://picsum.photos/id/239/200/300',
-        description: 'Zapatos deportivos',
-        stock: 20,
-        category: "noob",
-        activeCategory: true
+const productos = JSON.parse( await fs.promises.readFile('./public/users.json', {encoding: 'utf-8'}))
 
-    }
-]
 
 
 productRouter.get('/:product_id', (req, res) => {

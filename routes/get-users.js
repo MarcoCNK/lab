@@ -5,7 +5,6 @@ import ResponseBuilder from "../builder/response.builder.js";
 const userRouter = Router()
 
 
-
 userRouter.get('/', async (req, res) => {
     try{
         const data = JSON.parse( await fs.promises.readFile('./public/users.json', {encoding: 'utf-8'}))
