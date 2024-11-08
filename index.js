@@ -2,7 +2,7 @@ import express from 'express';
 import productRouter from './routes/get-products.js'
 import userRouter from './routes/get-users.js'
 import productPostRouter from './routes/post-products.js'
-
+import productCutRouter from './routes/put-products.js'
 
 // crate an instance of http server
 const app = express();
@@ -11,6 +11,8 @@ const port = 3000;
 app.use('/get-products', productRouter)
 app.use('/post-products', productPostRouter)
 app.use('/get-users', userRouter)
+app.use('/put-products', productCutRouter)
+
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
