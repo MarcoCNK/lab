@@ -1,1 +1,75 @@
-{"id_counter":4,"products":[{"id":1,"name":"Pantalon","price":100,"imagen":"https://picsum.photos/id/237/200/300","description":"Pantalon deportivo","stock":10,"category":"pro","activeCategory":true},{"id":2,"name":"Camisa","price":50,"imagen":"https://picsum.photos/id/238/200/300","description":"Camisa deportiva","stock":5,"category":"baby","activeCategory":false},{"id":3,"name":"Zapatos","price":200,"imagen":"https://picsum.photos/id/239/200/300","description":"Zapatos deportivos","stock":20,"category":"noob","activeCategory":true},{"id":3,"name":"Smoking","price":300,"category":"noob","stock":50,"active":true}]}
+{
+  "id_counter": 4,
+  "products": [
+    {
+      "id": 1,
+      "name": "rukaido",
+      "price": 500,
+      "imagen": "https://picsum.photos/id/237/200/300",
+      "description": "Pantalon deportivo",
+      "stock": 4,
+      "category": "noob",
+      "activeCategory": true
+    },
+    {
+      "id": 2,
+      "name": "rukaido",
+      "price": 50,
+      "imagen": "https://picsum.photos/id/238/200/300",
+      "description": "Camisa deportiva",
+      "stock": 5,
+      "category": "baby",
+      "activeCategory": false
+    },
+    {
+      "id": 3,
+      "name": "rukaido",
+      "price": 800,
+      "imagen": "https://picsum.photos/id/239/200/300",
+      "description": "Zapatos deportivos",
+      "stock": 4,
+      "category": "noob",
+      "activeCategory": true
+    }
+  ],
+  "productsJSON": [
+    {
+      "id": 1,
+      "name": "rukaido",
+      "price": 500,
+      "imagen": "https://picsum.photos/id/237/200/300",
+      "description": "Pantalon deportivo",
+      "stock": 4,
+      "category": "noob",
+      "activeCategory": true
+    },
+    {
+      "id": 2,
+      "name": "rukaido",
+      "price": 50,
+      "imagen": "https://picsum.photos/id/238/200/300",
+      "description": "Camisa deportiva",
+      "stock": 5,
+      "category": "baby",
+      "activeCategory": false
+    },
+    {
+      "id": 3,
+      "name": "rukaido",
+      "price": 800,
+      "imagen": "https://picsum.photos/id/239/200/300",
+      "description": "Zapatos deportivos",
+      "stock": 4,
+      "category": "noob",
+      "activeCategory": true,
+      "zappato": "rukaido",
+      "status": "rukaido",
+      "zappa": 4,
+      "asd": 4,
+      "foobar": "rukaido",
+      "xyz": 800,
+      "qwerty": "noob",
+      "xys": "rukaido"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import productRouter from './routes/get-products.js'
 import userRouter from './routes/get-users.js'
 import productPostRouter from './routes/post-products.js'
 import productCutRouter from './routes/put-products.js'
+import productDelRouter from './routes/delete-users.js'
 
 // crate an instance of http server
 const app = express();
@@ -12,7 +13,7 @@ app.use('/get-products', productRouter)
 app.use('/post-products', productPostRouter)
 app.use('/get-users', userRouter)
 app.use('/put-products', productCutRouter)
-
+app.use('/app/delete', productDelRouter)
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
